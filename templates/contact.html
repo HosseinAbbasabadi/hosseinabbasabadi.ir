@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block Content %}
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container text-center single-col-max-width">
+        <h2 class="heading">ارتباط با من</h2>
+        <div class="intro">
+        <p>برای ارتباط با من می توانیم درخواست خود را به ایمیل 
+        <a href="mailto:info@hosseinabbasabadi.ir">info@hosseinabbasabadi.ir</a> 
+         ارسال نموده و یا از طریق فرم زیر درخواست خود را مطرح نمایید.
+          در اسرع وقت پاسخگوی شما خواهم بود.</p>
+    </div>
+</section>
+
+<section class="contact-section px-3 py-5 p-md-5">
+    <div class="container">
+        <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post">
+        {% csrf_token %}
+            <h3 class="text-center mb-3">فرم تماس</h3>
+            <div class="form-row">                                                           
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="{{ form.fullname.id_for_label }}">{{form.fullname.label}}</label>
+                    {{ form.fullname }}
+                </div>                    
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="{{ form.email.id_for_label }}">{{form.email.label}}</label>
+                    {{form.email}}
+                </div>                
+                <div class="form-group col-md-12">
+                    <label class="sr-only" for="{{form.mobile}}">{{form.mobile.label}}</label>
+                    {{form.mobile}}
+                </div>
+                <div class="form-group col-12">
+                    <label class="sr-only" for="{{form.message.id_for_label}}">{{form.message.label}}</label>
+                    {{form.message}}
+                </div>
+                 <div class="form-group col-12">
+                    <button type="submit" class="btn btn-block btn-primary py-2">ارسال پیام</button>
+                </div>                           
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock  %}

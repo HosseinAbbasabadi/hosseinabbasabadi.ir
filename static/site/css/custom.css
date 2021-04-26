@@ -1,0 +1,96 @@
+@font-face {
+  font-family: IranianSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/IranianSans.eot);
+  src: url(../fonts/IranianSans.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/IranianSans.woff) format("woff"),
+    url(../fonts/IranianSans.ttf) format("truetype");
+}
+
+body {
+  box-sizing: border-box;
+  font-family: IranianSans;
+  direction: rtl;
+  text-align: right;
+  font-size: 16px;
+  margin: 0;
+  line-height: 2.5;
+}
+
+.section-title {
+  padding-right: 1.5rem;
+}
+
+.section-title:before {
+  right: 0;
+}
+
+.tns-carousel {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.testimonial-carousel .source-holder .source-profile {
+  right: 0;
+}
+
+.testimonial-carousel .source-holder {
+  padding-right: 76px;
+  padding-left: unset;
+}
+
+.testimonial-carousel .item-inner {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.testimonial-carousel .item-inner:before {
+  left: unset;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.testimonial-carousel .fa-quote-right {
+  position: absolute;
+  right: 0.35rem;
+  top: 0.3rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.list-inline {
+  padding-right: 0;
+  padding-left: unset;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: unset;
+  margin-left: 0.5rem;
+}
+
+.social-list a {
+  padding-top: 0;
+}
+
+.profile-section .bio {
+  font-size: 1rem;
+}
+.navbar-nav {
+  padding-left: unset;
+  padding-right: 0;
+}
+
+.overview-section{
+  text-align: justify;
+}
+
+blockquote{
+  text-align: justify;
+}
+
+@media (max-width: 991.98px){
+.main-wrapper{
+  margin-right: 0;
+}
+}

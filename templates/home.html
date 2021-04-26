@@ -1,0 +1,484 @@
+{% extends 'base.html' %} {% load static %} {% block Content %}
+<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+  <div class="container">
+    <div class="profile-teaser media flex-column flex-lg-row">
+      <div class="media-body">
+        <h2 class="name font-weight-bold mb-1">حسین عباس آبادی</h2>
+        <div class="tagline mb-3">مدرس و برنامه نویس ارشد وب</div>
+        <div class="bio mb-4">
+          متخصص در زمنیه طراحی، معماری و تست و تولید وب اپلیکیشن.
+          <br />
+          آموزش دادن یکی از اصلی ترین علایقم است و در این سایت می تونید مقالات و
+          آموزش های من رو دنبال کنید.
+        </div>
+        <!--//bio-->
+        <div class="mb-4">
+          <a class="btn btn-primary mr-2 mb-3" href="portfolio.html"
+            ><i class="fas fa-arrow-alt-circle-right ml-2"></i
+            ><span class="d-none d-md-inline"></span>نمونه کارها</a
+          >
+          <a class="btn btn-secondary mb-3" href="resume.html"
+            ><i class="fas fa-file-alt ml-2"></i
+            ><span class="d-none d-md-inline">مشاهده</span> رزومه</a
+          >
+        </div>
+      </div>
+      <!--//media-body-->
+      <img
+        class="profile-image mb-3 mb-lg-0 mr-lg-5 ml-md-0"
+        src="{% static 'site/images/profile-lg2.jpg' %}"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+<!--//about-me-section-->
+
+<section class="overview-section p-3 p-lg-5">
+  <div class="container">
+    <h2 class="section-title font-weight-bold mb-3">من کی هستم؟</h2>
+    <div class="section-intro mb-5">
+      چند سالی هست که علاوه بر تولید نرم افزار، به فعالیت در زمینه آموزش نیز می
+      پردازم. همونطور که می دونید، تخصص اصلی من طراحی و معماری و تست اتوماتیک
+      هست، پس به زبان برنامه نویسی خاصی وابسته نیستم 😎 و تلاش می کنم تا این
+      مباحث و مفاهیم را در اکوسیستم های متفاوت (مانند Python یا .NET) پیاده سازی
+      کنم و آموزش بدم.
+      <br />
+      البته اگر بخوام خلاصه بگم، روی این تکنولوژی ها تسلط دارم و اون ها رو در
+      محیط های عملیاتی به کار بردم:
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            class="card-img-top"
+            src="{% static 'site/images/skills/dotnet.png' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html">C# & .NET Core</a>
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            style="background-color: white"
+            class="card-img-top"
+            src="{% static 'site/images/skills/pythonDjango.png' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html">Python & Django</a>
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            class="card-img-top"
+            src="{% static 'site/images/skills/angular.png' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html">Angular</a>
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+    </div>
+  </div>
+  <!--//container-->
+</section>
+
+<div class="container">
+  <hr />
+</div>
+
+<section class="testimonials-section p-3 p-lg-5">
+  <div class="container">
+    <h2 class="section-title font-weight-bold mb-5">نظرات دانشپذیران</h2>
+
+    <div class="testiomonial-carousel-container">
+      <div class="testimonial-carousel">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="item mb-3">
+              <div class="item-inner">
+                <div class="quote-holder">
+                  <blockquote class="quote-content">
+                    سلام استاد. ممنون از آموزش های خوبتون. خیلی عالی و مفهومی
+                    بود. باتشکر از شما
+                  </blockquote>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <!--//quote-holder-->
+                <div class="source-holder">
+                  <div class="source-profile">
+                    <img
+                      src="{% static 'site/images/clients/profile-1.png' %}"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="meta">
+                    <div class="name">علی</div>
+                    <div class="info">دانشجوی دوره</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="item mb-3">
+              <div class="item-inner">
+                <div class="quote-holder">
+                  <blockquote class="quote-content">
+                    باسلام این دوره همون چیزی بود که دنبالش بودم. باتشکر از شما
+                    و تیم خوبتون
+                  </blockquote>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="source-holder">
+                  <div class="source-profile">
+                    <img
+                      src="{% static 'site/images/clients/profile-1.png' %}"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="meta">
+                    <div class="name">حسن</div>
+                    <div class="info">دانشجوی دوره</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="item mb-3">
+              <div class="item-inner">
+                <div class="quote-holder">
+                  <blockquote class="quote-content">
+                    باسلام این دوره همون چیزی بود که دنبالش بودم. باتشکر از شما
+                    و تیم خوبتون
+                  </blockquote>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="source-holder">
+                  <div class="source-profile">
+                    <img
+                      src="{% static 'site/images/clients/profile-1.png' %}"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="meta">
+                    <div class="name">رضا</div>
+                    <div class="info">دانشجوی دوره</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <hr />
+</div>
+
+<section class="featured-section p-3 p-lg-5">
+  <div class="container">
+    <h2 class="section-title font-weight-bold mb-5">پروژه ها</h2>
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <div class="card project-card">
+          <div class="row no-gutters">
+            <div class="col-lg-4 card-img-holder">
+              <img
+                src="{% static 'site/images/project/project-1.jpg' %}"
+                class="card-img"
+                alt="image"
+              />
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="project.html" class="theme-link"
+                    >حسابداری رایپرداز</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Project intro lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit. Cum sociis natoque penatibus et magnis dis
+                  parturient montes.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">مشتری: شرکت رایپرداز</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="link-mask">
+                  <a class="link-mask-link" href="project.html"></a>
+                  <div class="link-mask-text">
+                    <a class="btn btn-secondary" href="project.html">
+                      <i class="fas fa-eye mr-2"></i>View Case Study
+                    </a>
+                  </div>
+                </div> -->
+          <!--//link-mask-->
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+      <div class="col-md-6 mb-5">
+        <div class="card project-card">
+          <div class="row no-gutters">
+            <div class="col-lg-4 card-img-holder">
+              <img
+                src="{% static 'site/images/project/project-2.jpg' %}"
+                class="card-img"
+                alt="image"
+              />
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="project.html" class="theme-link"
+                    >چاه آزما تحت وب (PPDM)</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum
+                  sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">مشتری: شرکت ملی نفت ایران</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-5">
+        <div class="card project-card">
+          <div class="row no-gutters">
+            <div class="col-lg-4 card-img-holder">
+              <img
+                src="{% static 'site/images/project/project-3.jpg' %}"
+                class="card-img"
+                alt="image"
+              />
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="project.html" class="theme-link"
+                    >مونوپ لاین (Monop Line)</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum
+                  sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">مشتری: شرکت ویدا سافت</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-5">
+        <div class="card project-card">
+          <div class="row no-gutters">
+            <div class="col-lg-4 card-img-holder">
+              <img
+                src="{% static 'site/images/project/project-4.jpg' %}"
+                class="card-img"
+                alt="image"
+              />
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="project.html" class="theme-link"
+                    >فروشگاه آیگون (IGUN)</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum
+                  sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">مشتری: گروه صنعتی igun</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="link-mask">
+            <a class="link-mask-link" href="project.html"></a>
+            <div class="link-mask-text">
+              <a class="btn btn-secondary" href="project.html">
+                <i class="fas fa-eye mr-2"></i>View Case Study
+              </a>
+            </div>
+          </div>
+          <!--//link-mask-->
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+    </div>
+    <!--//row-->
+    <div class="text-center py-3">
+      <a href="portfolio.html" class="btn btn-primary"
+        ><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a
+      >
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <hr />
+</div>
+
+<section class="latest-blog-section p-3 p-lg-5">
+  <div class="container">
+    <h2 class="section-title font-weight-bold mb-5">آخرین مقالات</h2>
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            class="card-img-top"
+            src="{% static 'site/images/blog/blog-post-thumb-card-1.jpg' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html"
+                >Top 3 JavaScript Frameworks</a
+              >
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+            <p class="mb-0">
+              <a class="more-link" href="blog-post.html">ادامه مطلب &larr;</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">منتشر شده در 12 فروردین 1400</small>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            class="card-img-top"
+            src="{% static 'site/images/blog/blog-post-thumb-card-2.jpg' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html"
+                >About Remote Working</a
+              >
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+            <p class="mb-0">
+              <a class="more-link" href="blog-post.html">Read more &rarr;</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Published a week ago</small>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+      <div class="col-md-4 mb-5">
+        <div class="card blog-post-card">
+          <img
+            class="card-img-top"
+            src="{% static 'site/images/blog/blog-post-thumb-card-3.jpg' %}"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a class="theme-link" href="blog-post.html"
+                >A Guide to Becoming a Full-Stack Developer</a
+              >
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient...
+            </p>
+            <p class="mb-0">
+              <a class="more-link" href="blog-post.html">Read more &rarr;</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Published 3 weeks ago</small>
+          </div>
+        </div>
+        <!--//card-->
+      </div>
+      <!--//col-->
+    </div>
+    <!--//row-->
+    <div class="text-center py-3">
+      <a href="blog-home.html" class="btn btn-primary"
+        ><i class="fas fa-arrow-alt-circle-right ml-2"></i>مشاهده همه مقالات</a
+      >
+    </div>
+  </div>
+  <!--//container-->
+</section>
+<!--//latest-blog-section-->
+
+{% endblock %}
